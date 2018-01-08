@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "version": "1.0.0",
+
+    "name": "hell0_o",
+    "description": "operate your html elements",
+    "browser_action": {
+        "default_icon": "operate-element.png",
+        "default_title": "hell0_o"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "tabs"
+    ],
+    "content_scripts": [{
+        "matches": ["http://*/*", "https://*/*"],
+        "js": [
+            "third_party/jquery-3.2.1.js",
+            "cc_scripts/cc_util/cc_util.js",
+            "cc_scripts/cc_util/cc_chrome_util.js",
+            "content.js"
+        ]
+    }]
+}
