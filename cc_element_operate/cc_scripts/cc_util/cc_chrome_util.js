@@ -13,7 +13,7 @@ var cc_chrome_util = {/**
     },
 
     /**
-     * 
+     * @description 获取当前网页url
      */
     getCurrentTabUrl: function () {
         chrome.tabs.query({
@@ -27,7 +27,7 @@ var cc_chrome_util = {/**
     },
 
     /**
-     * 
+     * @description 向前台content页面发送消息
      * @param {*} tabId 
      * @param {*} message 
      * @param {*} responseCallBack 
