@@ -5,10 +5,16 @@ var cc_content = {
      */
     init: function() {
 
+        //添加监听消息
         chrome.runtime.onMessage.addListener( function (message, sender, sendResponse){
             cc_util.executeFunctionByName(message.methond, window, message.params);
         });
 
+        //
+        var currentUrl = cc_util.getCurrentUrl();
+
+        var currentDomain = cc_util.parseDoMainUrl(currentUrl); 
+        cc_util.consoleLog(currentUrl);
     },
 
     /**
