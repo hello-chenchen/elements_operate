@@ -24,6 +24,12 @@ var cc_util = {
         }
     },
 
+    alertMessage: function () {
+        for(var i = 0; i < arguments.length; i++) {
+            alert("alertLog: " + arguments[i]);
+        }
+    },
+
     /**
      * @description 解析主机名
      * @argument strUrl:url
