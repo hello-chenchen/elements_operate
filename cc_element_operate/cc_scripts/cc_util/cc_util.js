@@ -24,10 +24,20 @@ var cc_util = {
         }
     },
 
+    /**
+     * @description 弹出窗口信息
+     */
     alertMessage: function () {
         for(var i = 0; i < arguments.length; i++) {
             alert("alertLog: " + arguments[i]);
         }
+    },
+
+    /**
+     * @description 获取当前页面的url
+     */
+    getCurrentUrl: function () {
+        return window.location.href;
     },
 
     /**
