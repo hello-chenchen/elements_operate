@@ -15,6 +15,10 @@ var cc_util = {
         return context[func].apply(context, args);
     },
 
+    highLightElements: function(message) {
+        console.log(message);
+    },
+
     /**
      * @description 打印日志
      */

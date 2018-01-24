@@ -10,9 +10,14 @@ var cc_content = {
             cc_util.executeFunctionByName(message.methond, window, message.params);
         });
 
-        //
-        var currentUrl = cc_util.getCurrentUrl();
+        //注册mouseover事件
+        document.addEventListener("mouseover", function() {
+            // cc_mouse.mouseOverAction(window.event);
+            cc_mouse.mouseOverActionRegist("cc_elements.highLightElements", window, window.event);
+        }, true);
 
+        //获取当前网页主机名
+        var currentUrl = cc_util.getCurrentUrl();
         var currentDomain = cc_util.parseDoMainUrl(currentUrl); 
         cc_util.consoleLog(currentUrl);
     },
