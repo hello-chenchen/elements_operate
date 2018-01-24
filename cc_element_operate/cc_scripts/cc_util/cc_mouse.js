@@ -13,5 +13,9 @@ var cc_mouse = {
      */
     mouseOverAction: function(e) {
         e.target.style.outline = "solid 6px rgba(255,0,0,0.5)";
+    },
+
+    mouseOutActionRegist: function(functionName,context) {
+        cc_util.executeFunctionByName(functionName, context);
     }
 }
