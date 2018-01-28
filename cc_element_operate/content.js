@@ -12,14 +12,8 @@ var cc_content = {
 
         //注册mouseover事件
         document.addEventListener("mouseover", function() {
-            // cc_mouse.mouseOverAction(window.event);
-            cc_mouse.mouseOverActionRegist("cc_elements.highLightElement", window, window.event);
+            cc_mouse.mouseOverAction(window.event);
         }, true);
-
-        //注册mouseout事件
-        // document.addEventListener("mouseleave", function() {
-        //     cc_mouse.mouseOutActionRegist("cc_elements.removeHighLightElement", window);
-        // }, true);
 
         //获取当前网页主机名
         var currentUrl = cc_util.getCurrentUrl();
