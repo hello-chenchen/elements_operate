@@ -4,6 +4,10 @@ var cc_mouse = {
      * @description 添加鼠标悬停注册函数
      */
     mouseOverActionRegist: function(functionName, context, windowsEvent) {
+        if(cc_elements.targetElement != null)
+        {
+            cc_elements.removeHighLightElement();
+        }
         cc_elements.targetElement = windowsEvent.target;
         cc_util.executeFunctionByName(functionName, context);
     },

@@ -17,9 +17,9 @@ var cc_content = {
         }, true);
 
         //注册mouseout事件
-        document.addEventListener("mouseleave", function() {
-            cc_mouse.mouseOutActionRegist("cc_elements.removeHighLightElement", window);
-        }, true);
+        // document.addEventListener("mouseleave", function() {
+        //     cc_mouse.mouseOutActionRegist("cc_elements.removeHighLightElement", window);
+        // }, true);
 
         //获取当前网页主机名
         var currentUrl = cc_util.getCurrentUrl();
