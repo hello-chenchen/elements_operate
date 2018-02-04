@@ -1,38 +1,24 @@
-var cc_mouse = {
+/**
+ * 
+ * 
+ */
+function cc_mouse () {
+
+    var m_element = new cc_elements();
 
     /**
-     * @description 添加鼠标悬停动作
+     * 
+     * @param {*} windowsEvent 
      */
-    mouseOverAction: function(windowsEvent) {
-
-        if(cc_elements.targetElement != null)
+    this.mouseOverAction = function(windowsEvent) {
+        if(m_element.getTargetElement() != null)
         {
-            cc_elements.removeHighLightElement();
+            m_element.removeHighLightElement();
         }
 
-        cc_elements.targetElement = windowsEvent.target;
+        //更新cc_elements类中的targetElement
+        m_element.setTargetElement(windowsEvent.target);
 
-        cc_elements.highLightElement();
-    }
-}
-
-function hc_mouse () {
-    this.mouseOverAction = function (windowsEvent) {
-        if(cc_elements.targetElement != null)
-        {
-            cc_elements.removeHighLightElement();
-        }
-
-        cc_elements.targetElement = windowsEvent.target;
-
-        cc_elements.highLightElement();
-    }
-
-    var privateMouse = 18;
-
-    this.publicMouse = 22;
-
-    this.getPrivateMouse = function() {
-        return privateMouse;
+        m_element.highLightElement();
     };
 }

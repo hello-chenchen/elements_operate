@@ -1,4 +1,5 @@
 var cc_content = {
+    m_mouse: new cc_mouse(),
 
     /**
      * @description content页面初始化
@@ -12,7 +13,7 @@ var cc_content = {
 
         //注册mouseover事件
         document.addEventListener("mouseover", function() {
-            cc_mouse.mouseOverAction(window.event);
+            cc_content.m_mouse.mouseOverAction(window.event);
         }, true);
 
         //获取当前网页主机名
