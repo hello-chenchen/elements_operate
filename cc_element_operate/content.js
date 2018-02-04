@@ -17,9 +17,8 @@ var cc_content = {
         }, true);
 
         //获取当前网页主机名
-        var currentUrl = cc_util.getCurrentUrl();
-        var currentDomain = cc_util.parseDoMainUrl(currentUrl); 
-        cc_util.consoleLog(currentUrl);
+        var currentDomain = window.location.host;
+        cc_util.consoleLog(currentDomain);
     },
 
     /**
@@ -31,7 +30,6 @@ var cc_content = {
 }
 
 cc_content.init();
-// cc_content.sendMessage2BackgroundTest();
 
 
 
