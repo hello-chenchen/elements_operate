@@ -16,8 +16,12 @@
     "content_scripts": [{
         "all_frames": false,
         "matches": ["http://*/*", "https://*/*"],
+        "css": [
+            // "third_party/bootstrap.css"
+        ],
         "js": [
             "third_party/jquery-3.2.1.js",
+            "third_party/bootstrap.js",
             "cc_scripts/cc_util/cc_chrome_util.js",
             "cc_scripts/cc_util/cc_elements.js",
             "cc_scripts/cc_util/cc_util.js",

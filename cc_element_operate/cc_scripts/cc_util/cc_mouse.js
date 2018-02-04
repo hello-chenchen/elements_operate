@@ -3,7 +3,6 @@
  * 
  */
 function cc_mouse () {
-
     var m_element = new cc_elements();
 
     /**
@@ -20,5 +19,16 @@ function cc_mouse () {
         m_element.setOriginalOutLineStyle(windowsEvent.target.style.outline);
 
         m_element.highLightElement();
-    };
+    }
+
+    /**
+     * 
+     * @param {*} windowsEvent 
+     */
+    this.mouseDownAction = function(windowsEvent) {
+        console.log("mouseDownAction");
+        m_element.setTargetElement(windowsEvent.target);
+        //TODO append方法有问题，暂未解决
+        // m_element.appendElement(cc_css.cc_botton_test);
+    }
 }
