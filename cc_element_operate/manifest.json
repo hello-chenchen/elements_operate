@@ -23,6 +23,7 @@
             "cc_scripts/cc_util/cc_util.js",
             "cc_scripts/cc_util/cc_mouse.js",
             "cc_scripts/cc_util/cc_keyboard.js",
+            "cc_scripts/cc_util/cc_css.js",
             "cc_scripts/cc_bussiness/cc_bussiness.js",
             "content.js"
         ],

@@ -1,3 +1,3 @@
 var cc_css = {
-    const 
+    cc_sideHighLight : "solid 6px rgba(255,0,0,0.5)"
 }
