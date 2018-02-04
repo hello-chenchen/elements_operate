@@ -5,7 +5,6 @@ var cc_content = {
      * @description content页面初始化
      */
     init: function() {
-
         //添加监听消息
         chrome.runtime.onMessage.addListener( function (message, sender, sendResponse){
             cc_util.executeFunctionByName(message.methond, window, message.params);
@@ -14,6 +13,11 @@ var cc_content = {
         //注册mouseover事件
         document.addEventListener("mouseover", function() {
             cc_content.m_mouse.mouseOverAction(window.event);
+        }, true);
+
+        //注册mousedown事件
+        document.addEventListener("mousedown", function(){
+            cc_content.m_mouse.mouseDownAction(window.event);
         }, true);
 
         //获取当前网页主机名

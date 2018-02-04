@@ -29,4 +29,8 @@ function cc_elements(){
         targetElement.style.outline = cc_css.cc_sideHighLight;
     }
 
+    this.appendElement = function(elementText) {
+        targetElement.append(elementText);
+    }
+
 }
