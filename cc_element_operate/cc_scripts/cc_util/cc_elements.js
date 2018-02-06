@@ -30,7 +30,7 @@ function cc_elements(){
     }
 
     this.appendElement = function(elementText) {
-        targetElement.append(elementText);
+        cc_util.transDOM2jQuery(targetElement).append(elementText);
     }
 
 }
