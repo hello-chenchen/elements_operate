@@ -54,5 +54,14 @@ var cc_util = {
         var matches = strUrl.match(regExp);
 
         return matches[2];
+    },
+
+    /**
+     * @description 将DOM元素对象转换成jQuery对象
+     */
+    transDOM2jQuery: function (domElement) {
+        if(!(domElement instanceof jQuery)) {
+            return $(domElement);
+        }
     }
 }

@@ -7,5 +7,5 @@ var cc_css = {
     //
     cc_sigleSelectTable : "<div class='btn-group'></div>",
     
-    cc_botton_test : "<botton></botton>"
+    cc_botton_test : "<button></button>"
 }

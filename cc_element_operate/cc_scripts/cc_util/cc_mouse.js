@@ -22,13 +22,12 @@ function cc_mouse () {
     }
 
     /**
-     * 
+     * 添加鼠标点击操作
      * @param {*} windowsEvent 
      */
     this.mouseDownAction = function(windowsEvent) {
         console.log("mouseDownAction");
         m_element.setTargetElement(windowsEvent.target);
-        //TODO append方法有问题，暂未解决
-        // m_element.appendElement(cc_css.cc_botton_test);
+        m_element.appendElement(cc_css.cc_botton_test);
     }
 }
