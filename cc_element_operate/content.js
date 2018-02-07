@@ -5,6 +5,7 @@ var cc_content = {
      * @description content页面初始化
      */
     init: function() {
+
         //添加监听消息
         chrome.runtime.onMessage.addListener( function (message, sender, sendResponse){
             cc_util.executeFunctionByName(message.methond, window, message.params);

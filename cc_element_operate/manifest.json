@@ -15,10 +15,10 @@
     "permissions": [ "tabs", "http://*/*", "https://*/*" ],
     "content_scripts": [{
         "all_frames": false,
-        "matches": ["http://*/*", "https://*/*"],
-        "css": [
-            // "third_party/bootstrap.css"
+        "web_accessible_resources": [
+            "third_party/bootstrap.css"
         ],
+        "matches": ["http://*/*", "https://*/*"],
         "js": [
             "third_party/jquery-3.2.1.js",
             "third_party/bootstrap.js",
