@@ -64,4 +64,5 @@ var cc_util = {
             return $(domElement);
         }
     }
+
 }
