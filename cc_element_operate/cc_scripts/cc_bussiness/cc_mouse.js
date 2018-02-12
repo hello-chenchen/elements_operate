@@ -1,8 +1,8 @@
 /**
  * @description 鼠标事件
  */
-function cc_mouse () {
-    var m_element = new cc_elements();
+function cc_mouse (element) {
+    var m_element = element;
     var locked = true;  //加锁
     var unlocked = false;   //未加锁
     var m_popmenuLock = unlocked;
