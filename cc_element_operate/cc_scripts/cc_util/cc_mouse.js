@@ -12,15 +12,32 @@ function cc_mouse () {
      * @param {*} windowsEvent
      */
     this.mouseOverAction = function(windowsEvent) {
-        if(m_element.getTargetElement() != null)
-        {
-            m_element.revertTargetElementOutLine();
-        }
+        // if(m_element.getTargetElement() != null)
+        // {
+        //     m_element.revertTargetElementOutLine();
+        // }
         //更新cc_elements类中的targetElement
         m_element.setTargetElement(windowsEvent.target);
         m_element.setOriginalOutLineStyle(windowsEvent.target.style.outline);
 
         m_element.highLightElement();
+    }
+
+    this.mouseOutAction =function(windowsEvent) {
+        if(m_element.getTargetElement() != null)
+        {
+            m_element.revertTargetElementOutLine();
+        }
+    }
+
+    this.mouseEnterAction = function(windowsEvent) {
+        m_element.setTargetElement(windowsEvent.target);
+        // m_element.setOriginalOutLineStyle(windowsEvent.target.style.outline);
+        m_element.highLightElement();
+    }
+
+    this.mouseLeaveAction = function(windowsEvent) {
+        m_element.revertTargetElementOutLine();
     }
 
     /**
