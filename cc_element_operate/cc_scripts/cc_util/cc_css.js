@@ -10,10 +10,7 @@ var cc_css = {
     cc_sigleSelectTable : "<div class='btn-group'></div>",
 
     cc_popmenu : '\
-    <div class="btn-group">\
-        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">\
-            Action\
-        </button>\
+    <div id="cc_popmenu" class="btn-group">\
         <div class="dropdown-menu">\
             <a class="dropdown-item" href="#">Action</a>\
             <a class="dropdown-item" href="#">Another action</a>\
