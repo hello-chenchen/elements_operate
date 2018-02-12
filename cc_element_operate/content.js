@@ -35,6 +35,3 @@ var cc_content = {
 }
 
 cc_content.init();
-
-
-
