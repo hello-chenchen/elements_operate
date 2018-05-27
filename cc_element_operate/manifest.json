@@ -2,7 +2,8 @@
     "description": "operate your html elements",
     "browser_action": {
         "default_icon": "operate-element.png",
-        "default_title": "hell0_o"
+        "default_title": "hell0_o",
+        "default_popup": "popup.html"
     },
     "background": {
         "scripts": [
