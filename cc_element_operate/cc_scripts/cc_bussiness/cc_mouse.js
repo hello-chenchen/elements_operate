@@ -38,6 +38,9 @@ function cc_mouse (element) {
         console.log("mouseDownAction");
         m_element.setTargetElement(windowsEvent.target);
         m_element.copyElement(windowsEvent.target);
+        cc_util.showMessage(100, "Copyed");
+        // m_element.appendElement('<div class="alert"></div>');
+        // $('.alert').html('操作成功').addClass('alert-success').show();
         // m_element.appendElement(cc_css.cc_button_test);
     }
 }
