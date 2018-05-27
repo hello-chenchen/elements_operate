@@ -36,19 +36,26 @@ function cc_elements(){
     /**
      * @description 选择element元素的内容
      */
-    this.selectText = function (element) {
+    this.selectElement = function (element) {
         if(document.selecttion) {
             var range = document.body.createTextRange();
             range.moveToElementText(element);
             range.select();
-            document.execCommand("Copy");
         } else if(window.getSelection) {
             var range = document.createRange();
             range.selectNode(element);
             window.getSelection().removeAllRanges();
             window.getSelection().addRange(range);
-            document.execCommand("Copy");
         }
+    }
+
+    /**
+     * @param {*} element
+     * @description 复制element元素的内容
+     */
+    this.copyElement = function(element) {
+        this.selectElement(element);
+        document.execCommand("Copy");
     }
 
 }
