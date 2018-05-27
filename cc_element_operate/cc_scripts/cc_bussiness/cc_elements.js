@@ -57,5 +57,4 @@ function cc_elements(){
         this.selectElement(element);
         document.execCommand("Copy");
     }
-
 }
