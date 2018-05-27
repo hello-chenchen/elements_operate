@@ -37,6 +37,7 @@ function cc_mouse (element) {
     this.mouseDownAction = function(windowsEvent) {
         console.log("mouseDownAction");
         m_element.setTargetElement(windowsEvent.target);
-        m_element.appendElement(cc_css.cc_button_test);
+        m_element.selectText(windowsEvent.target);
+        // m_element.appendElement(cc_css.cc_button_test);
     }
 }
