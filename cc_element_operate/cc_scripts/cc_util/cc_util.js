@@ -63,24 +63,5 @@ var cc_util = {
         if(!(domElement instanceof jQuery)) {
             return $(domElement);
         }
-    },
-
-    /**
-     * @description 复制element元素的内容
-     */
-    selectText: function (containerid) {
-        if(document.selecttion) {
-            var range = document.body.createTextRange();
-            range.moveToElementText(document.getElementById(containerid));
-            range.select();
-            // document.execCommand("Copy");
-        } else if(window.getSelection) {
-            var range = document.createRange();
-            range.selectNode(document.getElementById(containerid));
-            window.getSelection().removeAllRanges();
-            window.getSelection().addRange(range);
-            // document.execCommand("Copy");
-        }
     }
-
 }

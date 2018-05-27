@@ -33,4 +33,22 @@ function cc_elements(){
         cc_util.transDOM2jQuery(targetElement).append(elementText);
     }
 
+    /**
+     * @description 选择element元素的内容
+     */
+    this.selectText = function (element) {
+        if(document.selecttion) {
+            var range = document.body.createTextRange();
+            range.moveToElementText(element);
+            range.select();
+            document.execCommand("Copy");
+        } else if(window.getSelection) {
+            var range = document.createRange();
+            range.selectNode(element);
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+            document.execCommand("Copy");
+        }
+    }
+
 }
