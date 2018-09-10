@@ -13,6 +13,14 @@
             "background.js"
         ]
     },
+    "commands": {
+        "test": {
+            "suggested_key": {
+              "default": "Ctrl+Shift+1"
+            },
+            "description": "test"
+        }
+     },
     "permissions": [ "tabs", "http://*/*", "https://*/*" ],
     "content_scripts": [{
         "all_frames": false,
