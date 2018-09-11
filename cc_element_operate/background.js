@@ -9,10 +9,14 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
 
 chrome.runtime.onMessage.addListener(
     function (message, sender, sendResponse) {
-        cc_util.executeFunctionByName(message.methond, window, message.params);
+        // cc_util.executeFunctionByName(message.methond, window, message.params);
         // alert("cc_methond:" + message.methond + message.params);
-    });
+    }
+);
 
 chrome.commands.onCommand.addListener(function(command) {
-    cc_chrome_util.sendMessage2Content("cc_util.consoleLog", command);
-    });
+    cc_util.consoleLog("cc_cccccc");
+    cc_chrome_util.sendMessage2Content("cc_content.excuteHotKey", command);
+    // cc_util.executeFunctionByName("cc_keyboard." + command, window, null);
+    // cc_chrome_util.sendMessage2Content("cc_util.consoleLog", "ccccc");
+});

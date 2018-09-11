@@ -6,6 +6,7 @@ var cc_util = {
      * @description 通过字符串执行函数
      */
     executeFunctionByName: function (functionName, context /*, args */) {
+        // debugger;
         var args = Array.prototype.slice.call(arguments, 2);
         var namespaces = functionName.split(".");
         var func = namespaces.pop();
@@ -23,6 +24,7 @@ var cc_util = {
      * @description 打印日志
      */
     consoleLog: function () {
+        // debugger;
         for(var i = 0; i < arguments.length; i++) {
             console.log("cconsoleLog: " + arguments[i]);
         }
@@ -69,7 +71,7 @@ var cc_util = {
      * @description 显示消息1秒钟
      */
     showMessage: function (pWidth, content)
-    {    
+    {
         $("#msg").remove();
         var html ='<div id="msg" style="position:fixed;top:50%;width:100%;height:30px;line-height:30px;margin-top:-15px;"><p style="background:#000;opacity:0.8;width:'+ pWidth +'px;color:#fff;text-align:center;padding:10px 10px;margin:0 auto;font-size:12px;border-radius:4px;">'+ content +'</p></div>'
                 $("body").append(html);

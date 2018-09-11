@@ -21,6 +21,31 @@ function cc_main () {
         }, true);
     }
 
+    this.executeCommand = function(command) {
+        if('stop' == command) {
+            cc_util.consoleLog("command:" + command);
+            m_mouse.lockOperation();
+        } else if('start' == command) {
+            cc_util.consoleLog("command:" + command);
+            m_mouse.unLockOperation();
+        } else {
+            cc_util.consoleLog("unknow command:" + command);
+        }
+        // debugger;
+        // switch(command) {
+        //     case 'stop': {
+        //         m_mouse.lockOperation();
+        //         break;
+        //     } case 'start': {
+        //         m_mouse.unLockOperation();
+        //         break;
+        //     } default : {
+        //         cc_util.consoleLog("unknow command:" + command);
+        //         break
+        //     }
+        // }
+    }
+
     /** 
      * @description 主业务，初始化函数
     */
