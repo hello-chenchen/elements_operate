@@ -9,6 +9,7 @@ var cc_content = {
 
         //添加监听消息
         chrome.runtime.onMessage.addListener( function (message, sender, sendResponse){
+            // debugger;
             cc_util.executeFunctionByName(message.methond, window, message.params);
         });
 
@@ -30,6 +31,10 @@ var cc_content = {
         //获取当前网页主机名
         var currentDomain = window.location.host;
         cc_util.consoleLog(currentDomain);
+    },
+
+    excuteHotKey: function(command) {
+        cc_content.m_main.executeCommand(command);
     },
 
     /**

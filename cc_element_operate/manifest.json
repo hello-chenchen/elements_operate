@@ -14,11 +14,17 @@
         ]
     },
     "commands": {
-        "test": {
+        "stop": {
             "suggested_key": {
               "default": "Ctrl+Shift+1"
             },
-            "description": "test"
+            "description": "stop"
+        },
+        "start": {
+            "suggested_key": {
+              "default": "Ctrl+Shift+2"
+            },
+            "description": "start"
         }
      },
     "permissions": [ "tabs", "http://*/*", "https://*/*" ],
