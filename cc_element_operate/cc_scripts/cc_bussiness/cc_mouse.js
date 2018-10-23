@@ -21,7 +21,6 @@ function cc_mouse (element) {
      */
     this.mouseOverAction = function(windowsEvent) {
         if(m_popmenuLock){
-            // cc_util.consoleLog("plugin stoped!");
             if(m_element.getTargetElement() != null)
             {
                 m_element.revertTargetElementOutLine();
@@ -37,11 +36,10 @@ function cc_mouse (element) {
 
     /**
      * @description 添加离开选中元素事件
-     * @param {*} windowsEvent 
+     * @param {*} windowsEvent
      */
     this.mouseOutAction =function(windowsEvent) {
         if(m_popmenuLock){
-            // cc_util.consoleLog("plugin stoped!");
             return m_popmenuLock;
         }
         if(m_element.getTargetElement() != null)
@@ -56,7 +54,6 @@ function cc_mouse (element) {
      */
     this.mouseDownAction = function(windowsEvent) {
         if(m_popmenuLock){
-            // cc_util.consoleLog("plugin stoped!");
             return m_popmenuLock;
         }
         console.log("mouseDownAction");
