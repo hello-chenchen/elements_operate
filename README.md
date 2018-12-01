@@ -1,4 +1,15 @@
 # elements_operate
-chrome extension for operate DOM elements
+Chrome extension for operate DOM elements
 
-由于是个人项目，非商业代码。为方便阅读和维护。函数基本未做非空判断和异常处理
+Version: 0.0.1
+
+Function:
+Copy element context to you clipboard.
+
+Win/Linux:
+Use ctrl + shift + 2 to start
+Use ctrl + shift + 1 to stop
+
+Mac:
+Use cmd + shift + 2 to start
+Use cmd + shift + 1 to stop
