@@ -7,10 +7,10 @@
     },
     "background": {
         "scripts": [
-            "./third_party/jquery-3.2.1.js",
-            "./cc_scripts/cc_util/cc_chrome_util.js",
-            "./cc_scripts/cc_util/cc_util.js",
-            "./background.js"
+            "third_party/jquery-3.2.1.js",
+            "cc_scripts/cc_util/cc_chrome_util.js",
+            "cc_scripts/cc_util/cc_util.js",
+            "background.js"
         ]
     },
     "commands": {
