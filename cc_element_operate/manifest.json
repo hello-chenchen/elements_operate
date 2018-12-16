@@ -35,20 +35,20 @@
     "content_scripts": [{
         "all_frames": false,
         "web_accessible_resources": [
-            "./third_party/bootstrap.css"
+            "third_party/bootstrap.css"
         ],
         "matches": ["http://*/*", "https://*/*"],
         "js": [
-            "./third_party/jquery-3.2.1.js",
-            "./third_party/bootstrap.js",
-            "./cc_scripts/cc_util/cc_chrome_util.js",
-            "./cc_scripts/cc_util/cc_util.js",
-            "./cc_scripts/cc_bussiness/cc_elements.js",
-            "./cc_scripts/cc_bussiness/cc_mouse.js",
-            "./cc_scripts/cc_bussiness/cc_keyboard.js",
-            "./cc_scripts/cc_bussiness/cc_css.js",
-            "./cc_scripts/cc_bussiness/cc_main.js",
-            "./content.js"
+            "third_party/jquery-3.2.1.js",
+            "third_party/bootstrap.js",
+            "cc_scripts/cc_util/cc_chrome_util.js",
+            "cc_scripts/cc_util/cc_util.js",
+            "cc_scripts/cc_bussiness/cc_elements.js",
+            "cc_scripts/cc_bussiness/cc_mouse.js",
+            "cc_scripts/cc_bussiness/cc_keyboard.js",
+            "cc_scripts/cc_bussiness/cc_css.js",
+            "cc_scripts/cc_bussiness/cc_main.js",
+            "content.js"
         ],
         "run_at": "document_end"
         }],
@@ -57,6 +57,6 @@
     
         "name": "Operate-Element",
         "icons":{
-            "128": "./operate-element.png"
+            "128": "operate-element.png"
         }
     }
