@@ -1,9 +1,24 @@
 # elements_operate
 Chrome extension for operate DOM elements
 
-#### Version: 0.0.2
+## Version:
+0.0.2
 
-#### Function:
+## Suport Platforms
+- chrome browser
+
+## Dependence
+- This project is depends on jquery, bootscript
+
+## The Code Style
+- Please Read: [cc-code-style](https://github.com/hello-chenchen/cc-code-style)
+
+## Used Technologies
+- jquery
+- bootscript
+- chrome extension api
+
+## Function:
 Copy element context(rich text) to you clipboard.
 
 Win/Linux:
